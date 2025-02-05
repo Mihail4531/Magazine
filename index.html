@@ -16,7 +16,6 @@
     />
     <link rel="stylesheet" href="/assets/style/normalize.min.css" />
     <link rel="stylesheet" href="/assets/style/main-style.min.css" />
-    <script defer src="/assets/javascript/main.js"></script>
   </head>
   <body class="application">
     <div class="application__template">
@@ -136,11 +135,9 @@
                     We specialize in preserving your cherished moments through
                     stunning photography
                   </p>
-                  <div class="welcome__left-call">
-                    <button class="welcome__left-btn button button--yellow">
-                      Book A Call
-                    </button>
-                    <button class="welcome__left-btn arrow arrow--secondary">
+                  <div class="welcome__left-block">
+                    <button class="welcome__left-btn button button--yellow">Book A Call</button>
+                    <button class="welcome__left-btn  arrow arrow--secondary ">
                       <svg
                         width="24"
                         height="24"
@@ -166,38 +163,55 @@
                     </button>
                   </div>
                   <div class="welcome__left-bottom">
-                    <img
-                      src="/assets/public/img/Rectangle 440.png"
-                      alt=""
-                      class="welcome__left-img"
-                    />
-                    <img
-                      src="/assets/public/img/Rectangle 440.png"
-                      alt=""
-                      class="welcome__left-img"
-                    />
-                    <img
-                      src="/assets/public/img/Rectangle 440.png"
-                      alt=""
-                      class="welcome__left-img"
-                    />
+                    <img src="/assets/public/img/Rectangle 440.png" alt="" class="welcome__left-img">
+                    <img src="/assets/public/img/Rectangle 440.png" alt="" class="welcome__left-img">
+                    <img src="/assets/public/img/Rectangle 440.png" alt="" class="welcome__left-img">
                   </div>
                 </div>
                 <div class="welcome__right">
-                  <img
-                    src="/assets/public/img/image.png"
-                    alt=""
-                    class="welcome__right-img"
-                  />
+                    <img src="/assets/public/img/image.png" alt="" class="welcome__right-img">
                 </div>
+              </div>
+              <div class="welcome__service service">
+                <div class="service__left">
+                    <div class="service__left-block">
+                        <img src="/assets/public/img/portrait-questioned-thinking-attractive-woman-looking-up-with-thoughtful-focused-expression.png" alt="" class="service__left-img">
+                        <img src="/assets/public/img/portrait-questioned-thinking-attractive-woman-looking-up-with-thoughtful-focused-expression.png" alt="" class="service__left-img">
+                        <img src="/assets/public/img/portrait-questioned-thinking-attractive-woman-looking-up-with-thoughtful-focused-expression.png" alt="" class="service__left-img">
+                        <img src="/assets/public/img/portrait-questioned-thinking-attractive-woman-looking-up-with-thoughtful-focused-expression.png" alt="" class="service__left-img">
+                    </div>
+                    <p class="service__left-text">
+                        32k people happy with <br> our service
+                    </p>
+                </div>
+                <div class="service__right">
+                    <button class="service__right-btn">Landscape</button>
+                    <button class="service__right-btn">Potrait</button>
+                    <button class="service__right-btn">Project</button>
+                    <button class="service__right-btn">Event</button>
+                </div>
+            </div>
               </div>
             </div>
           </section>
+         
         </div>
       </main>
       <footer class="application__footer footer">
         <!-- контент подвала сайта -->
       </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      const hamb = document.querySelector("#hamb");
+      const phone = document.querySelector("#phone");
+      hamb.addEventListener("click", hambHandler);
+      function hambHandler(e) {
+        e.preventDefault();
+        hamb.classList.toggle("active");
+        phone.classList.toggle("phone--active");
+      }
+    </script>
   </body>
 </html>
