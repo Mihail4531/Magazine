@@ -77,6 +77,12 @@
   border: 1px solid black;
 }
 
+.button--yellow {
+  color: #DCE9B1;
+  background-color: black;
+  border: 1px solid black;
+}
+
 .arrow {
   cursor: pointer;
   display: flex;
@@ -237,4 +243,68 @@
   .phone__contact {
     display: flex;
   }
+}
+
+.welcome {
+  width: 100%;
+  padding-top: 22px;
+}
+.welcome__container {
+  overflow: hidden;
+}
+.welcome__content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.welcome__left {
+  width: 100%;
+  margin-top: 126px;
+  padding: 0;
+}
+.welcome__left-img {
+  max-width: 270px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.welcome__left-title {
+  max-width: 900px;
+  font-weight: 500;
+  font-size: 64px;
+  padding: 0;
+  margin: 0;
+}
+.welcome__left-text {
+  max-width: 383px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.3;
+  margin-top: 12px;
+  margin-bottom: 40px;
+}
+.welcome__left-call {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.welcome__left-bottom {
+  width: 100%;
+  margin-top: 127px;
+  padding: 0;
+  display: flex;
+  gap: 25px;
+  margin-left: -90px;
+}
+.welcome__right {
+  max-width: 524px;
+}
+.welcome__right-img {
+  max-width: 524px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=main-style.min.css.map */
