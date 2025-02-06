@@ -1,76 +1,81 @@
 .service{
     width: 100%;
-    background-color: #DCE9B1;
-    margin-top: 28px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 12px 32px;
-    @media(max-width:987px){
-        padding: 10px 15px;
+    padding-top: 80px;
+    background-color: #f5f5f5;
+    &__info{
+        display: flex;
+justify-content: space-between;
     }
-   
-    @media(max-width:673px){
-        padding: 8px 0;
-     }
-     @media(max-width:500px){
-        flex-direction: column;
-    }
-    &__left{
+    &__navigation{
         display: flex;
         align-items: center;
-        gap: 10px;
+    }
+    &__title{
         margin: 0;
         padding: 0;
-        &-block{
-            
-            padding-left: 32px;
-            @media(max-width:673px){
-                padding-left: 20px;
-             }
-        }
-        &-img{
-           margin-left: -25px;
-           @media(max-width:673px){
-            width: 45px;
-            margin-left: -18px;
-         }
-        }
-        &-text{
-font-weight: 600;
-font-size: 16px;
-
-@media(max-width:987px){
-   font-size: 12px;
-}
-@media(max-width:673px){
-    font-size: 7px;
- }
-        }
+font-weight: 500;
+font-size: 40px;
+max-width: 470px;
     }
-    &__right{
+    &__search{
+        padding: 5px 5px 5px 12px;
+        border-radius: 36px;
+        width: 266px;
         display: flex;
         align-items: center;
-        gap: 12px;
-        @media(max-width:987px){
-            gap: 5px;
-         }
-        &-btn{
-            border: 1px solid rgba(0, 0, 0, 0.08);
-            backdrop-filter: blur(48px);
-background: rgba(255, 255, 255, 0.16);
-border-radius: 28px;
-padding: 12px 32px;
-display: block;
-cursor: pointer;
-@media(max-width:987px){
-    padding: 5px 12px;
-    font-size: 12px;
- }
- @media(max-width:673px){
-    padding: 5px 8px;
-    font-size: 9px;
- }
+        justify-content: space-between;
+        background-color: white;
+        border: 1px solid  #EBEBEB;
+        margin-right: 12px;
+       
+    }
+    &__input{
+        width: 130px;
+        font-size: 16px;
+        outline: none;
+        background-color: transparent;
+        border: none;
+    }
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        flex: 2;
+        margin-top: 40px;
+        &--white{
+            background-color: white;
+            padding: 24px;
+            border-radius: 12px;
+            margin: 0;
         }
+   &-text{
+   max-width: 580px;
+font-weight: 400;
+font-size: 18px;
+margin: 0;
+padding: 0;
+   }
+   &-description{
+    margin: 0;
+   
+    padding: 0;
+   }
+   
+    }
+    &__item{
+        display: flex;
+        justify-content: end;
+      margin-top: 64px;
+      padding: 0;
+    }
+    &__images{
+       display: flex;
+       gap: 14px;
+    }
+    &__bottom{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        margin-top: 40px;
     }
 }
