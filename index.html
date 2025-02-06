@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
+  <script type="module" defer src="/assets/javascript/main.js"></script>
   <!-- Подключение boxicons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
   <link rel="stylesheet" href="/assets/style/normalize.min.css" />
   <link rel="stylesheet" href="/assets/style/main-style.min.css" />
 </head>
-
 <body class="application">
   <div class="application__template">
     <header class="application__header header" id="header">
@@ -507,41 +505,8 @@
   </div>
   </main>
   <footer class="application__footer footer">
-    <!-- контент подвала сайта -->
   </footer>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-  <script>
-    const hamb = document.querySelector("#hamb");
-    const phone = document.querySelector("#phone");
-    hamb.addEventListener("click", hambHandler);
-    function hambHandler(e) {
-      e.preventDefault();
-      hamb.classList.toggle("active");
-      phone.classList.toggle("phone--active");
-    }
-    var swiper = new Swiper(".mySwiper", {
-      navigation: {
-        nextEl: ".about__pagination-left",
-        prevEl: ".about__pagination-right",
-      },
-    });
-    var swiper = new Swiper(".work__swiper", {
-      slidesPerView: 3,
-      spaceBetween: 20,
-      breakpoints: {
-        // when window width is >= 320px
-
-
-      },
-      pagination: {
-        clickable: true,
-      },
-
-
-    });
-  </script>
 </body>
-
 </html>
