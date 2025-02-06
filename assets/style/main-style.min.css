@@ -765,7 +765,6 @@
 .testimonials {
   width: 100%;
   padding-top: 64px;
-  padding-bottom: 50px;
 }
 .testimonials__info {
   display: flex;
@@ -955,4 +954,53 @@
 .card__img {
   border-top-right-radius: 24px 24px;
   border-bottom-right-radius: 24px 24px;
+}
+
+.inside {
+  width: 100%;
+  padding-top: 130px;
+}
+.inside__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.inside__buttons {
+  display: flex;
+}
+.inside__title {
+  max-width: 450px;
+  font-weight: 400;
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+}
+.inside__list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  padding: 0;
+  width: 100%;
+  gap: 24px;
+}
+.inside__list-item {
+  margin: 0;
+  padding: 0;
+  max-width: 444px;
+  width: 100%;
+}
+.inside__list-title {
+  margin-top: 24px;
+  padding: 0;
+  max-width: 270px;
+  font-weight: 500;
+  font-size: 24px;
+}
+.inside__list-text {
+  max-width: 440px;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 0;
+  margin-top: 12px;
 }/*# sourceMappingURL=main-style.min.css.map */
